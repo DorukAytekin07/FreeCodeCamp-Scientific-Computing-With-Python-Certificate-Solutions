@@ -42,9 +42,8 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
 # hat = Hat(red=5, blue=2)
 # actual = hat.contents
 # print(actual)
-hat = Hat(yellow=5, red=1, green=3, blue=9, test=1)
-probability = experiment(hat=hat,
-                                             expected_balls={"yellow":2,"blue":4,"test":1},
-                                             num_balls_drawn=19,
-                                             num_experiments=100)
+hat = Hat(blue=3,red=2,green=6)
+probability = experiment(hat=hat, 
+    expected_balls={"blue":2,"green":1},
+    num_balls_drawn=4, num_experiments=1000)
 print(probability)
